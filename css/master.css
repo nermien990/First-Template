@@ -1,0 +1,232 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  --colorRed: rgb(161, 26, 37);
+}
+@media all and (max-width: 1500px) {
+  /* Header */
+  ul > h2 {
+    color: white;
+    text-shadow: 1px 1px 1px var(--colorRed), 2px 1px 1px rgb(83, 81, 81);
+    font-size: 35px;
+  }
+  ul {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    font: bold 15px Tahoma;
+    color: var(--colorRed);
+  }
+  a:hover {
+    color: gray;
+  }
+  /* cover */
+  .cover {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../photos/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .cover > h2 {
+    font-size: 25px;
+    margin: 2rem;
+    color: white;
+    text-align: center;
+  }
+  .cover > button {
+    padding: 1.5rem 2rem;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, transparent, gray);
+  }
+  .cover > button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-image: linear-gradient(to right, gray, transparent);
+  }
+  /* introduction */
+  .introduction {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .introduction > .intro_img,
+  .introduction > .intro_text {
+    flex: 1 1 23rem;
+  }
+  .introduction > .intro_img > img {
+    width: 100%;
+    height: 100%;
+  }
+  .intro_text > h2 {
+    color: rgb(29, 28, 28);
+  }
+  .intro_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(185, 185, 185)
+    );
+  }
+  .tracks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .tracks > .track > img {
+    display: inline-block;
+    margin: 1rem 0px 1rem 2rem;
+  }
+
+  .locations {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .locations > .location_header {
+    text-align: center;
+  }
+  .locations > .location_header > h2 {
+    font-family: "Pacifico", "cursive";
+    font-size: 40px;
+    font-weight: lighter;
+    color: var(--colorRed);
+    margin-top: 2rem;
+  }
+  .location_header > p {
+    font: small 15px tahoma;
+    color: rgb(53, 52, 52);
+  }
+  .locations > .location_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .location > .branch {
+    width: 13rem;
+    height: 4rem;
+    display: flex;
+    cursor: pointer;
+    padding: 12px 8px;
+    font: lighter 18px sans-serif;
+    background-color: rgb(209, 209, 209);
+    color: rgb(72, 72, 73);
+  }
+  .branch > i {
+    margin-right: 6px;
+  }
+  .location_container > .location {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-areas:
+      "B1 B2"
+      "B3 B4"
+      "B5 B6"
+      "B7 B8"
+      "B9 ";
+    gap: 1rem;
+  }
+  #b1 {
+    grid-area: B1;
+  }
+  .location:nth-child(1) {
+    grid-area: B1;
+  }
+  .location:nth-child(2) {
+    grid-area: B2;
+  }
+  .location:nth-child(3) {
+    grid-area: B3;
+  }
+  .location:nth-child(4) {
+    grid-area: B4;
+  }
+  .location:nth-child(5) {
+    grid-area: B5;
+  }
+  .location:nth-child(6) {
+    grid-area: B6;
+  }
+  .location:nth-child(7) {
+    grid-area: B7;
+  }
+  .location:nth-child(8) {
+    grid-area: B8;
+  }
+  .location:nth-child(9) {
+    grid-area: B9;
+  }
+  .branch-container > .branch-select {
+    display: flex;
+    justify-content: start;
+  }
+  .branch-container {
+    display: flex;
+  }
+  section {
+    width: 14px;
+    height: 14px;
+    margin: 0px 6px 0px 8px;
+    background-color: rgb(33, 70, 66);
+  }
+  #s1 {
+    background-color: var(--colorRed);
+  }
+  section:hover {
+    box-shadow: gray 0px 1px 5px;
+  }
+  .branch-select > p {
+    cursor: pointer;
+  }
+  .footer {
+    height: 40vh;
+    background-color: rgb(24, 23, 23);
+    color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .footer > .contactUs {
+    margin-right: 6rem;
+  }
+  .footer h2 {
+    color: white;
+    font: lighter 22px tahoma;
+    margin-bottom: 1rem;
+  }
+  .contactUs > .address {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .contactUs > .address > i {
+    margin-right: 1rem;
+  }
+  .followUs i {
+    font-size: 25px;
+    margin: 6px;
+    color: white;
+  }
+}

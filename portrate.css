@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+  /* .intro_text > p > a {
+    margin-top: 5rem;
+  } */
+  /* .intro_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(185, 185, 185)
+    );
+  } */
+}
